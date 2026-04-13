@@ -6,7 +6,7 @@ class Wallet{
         return balance;
     }
 
-    void deposite(double amount){
+    void deposit(double amount){
         if(amount > 0){
             balance += amount;
         }
@@ -14,6 +14,8 @@ class Wallet{
 }
 public class Project{
     public static void main(String[] args){
-        
+        Wallet w1 = new Wallet();
+        Wallet w2 = new Wallet();
+        w1.deposit(1000);
     }
 }
