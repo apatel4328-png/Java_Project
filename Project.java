@@ -15,7 +15,7 @@ class Wallet{
     public void transferTo(Wallet receiver, double amount) {
         try {
             if (amount <= 0) {
-                throw new Exception("Invalid amount");
+                throw new IllegalAccessException("Invalid amount");
             }
 
             if (balance < amount) {
